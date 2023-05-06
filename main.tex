@@ -1,0 +1,49 @@
+\documentclass{article}
+
+% Math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% Graphics packages
+\usepackage{graphicx}
+\usepackage{tikz}
+
+% Other packages
+\usepackage{hyperref}
+\usepackage{longtable}
+
+% Heading
+\usepackage{titlesec}
+\usepackage{needspace}
+
+% Geometry
+\usepackage[margin=1in, a4paper]{geometry}
+
+% Custom commands
+\titleformat{\section}
+{\needspace{1in}\Large\bfseries}{\thesection}{1em}{}
+
+% Title
+\title{LEV Linux Handbook}
+\author{SalahDin Rezk}
+\date{\today}
+
+% Document
+\begin{document}
+
+% front matter
+\maketitle
+\tableofcontents
+
+% main matter
+\section{Xorg}
+\input{sections/dwm}
+\input{sections/sxhkd}
+\section{ST}
+\section{NeoVIM}
+\section{FISH Shell}
+\section{nnn}
+\section{Zathura}
+
+\end{document}
